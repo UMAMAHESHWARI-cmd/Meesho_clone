@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meesho</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            height: 80px;
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .navbar p {
+            color: #570D48;
+            font-size: 45px;
+            font-weight: bold;
+            font-family:  sans-serif;
+            margin-left: 35px;
+        }
+        .navbar button {
+            margin-left: 30px;
+            padding: 10px 35px;
+            width: 600px;
+            text-align: left;
+            font-size: 18px;
+            background-color: #FFFFFF;
+            color: grey;
+            border-radius: 5px;
+            cursor: pointer;
+            border-color: rgb(146, 145, 145) ;
+        }
+        p.text{
+            margin-left: 10px;
+            color: rgb(118, 116, 116);
+            font-size: 15px;
+            font-weight: bold;
+            font-family:  sans-serif;
+        }
+        .divider{
+            border-left: 1.5px solid #888;
+            height: 60px;
+            margin-left: 20px;
+        }
+        .img img{
+            height: 60px;
+            width: 150px;
+            border-radius: 50%;
+            margin-left: 60px;
+        }
+        .line p{
+            color: black;
+            font-size: 20px;
+            margin-top: -20px;
+            text-align: center;
+        }
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            background-color: #F5F5F5;
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .menu li{
+            cursor: pointer;
+        }
+        .line img{
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .box{
+            height: 40px;
+            background-color: #FDEEFA;
+        }
+        .box p{
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: -300px;
+            margin-top: 0px;
+            text-align: center;
+        }
+        .divide{
+            border-left: 1.5px solid #888;
+            height: 20px;
+            margin-left: 600px;
+            margin-top: -20px;
+        }
+        p.free{
+            margin-left: 110px;
+            margin-top: -25px;
+        }
+        .divi{
+            border-left: 1.5px solid #888;
+            height: 20px;
+            margin-left: 790px;
+            margin-top: -20px;
+        }
+        p.fre{
+            margin-left: 500px;
+            margin-top: -26px;
+        }
+        .deco img{
+            width: 85%;
+            margin-top: 30px;
+            cursor: pointer;
+            margin-left: 100px;
+        }
+        img.bro{
+            margin-top: 20px;
+            width: 100%;
+            cursor: pointer;
+            margin-left: -0px;
+        }
+        img.bitch{
+            margin-top: 20px;
+            width: 100%;
+            cursor: pointer;
+            margin-left: -0px;
+        }
+        .boxes{
+            background-color: white;
+            height: 320px;
+            width: 220px;
+            border: 2px solid #CECEDE;
+            margin-top: 00px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .boxes img{
+            width: 175px;
+            height: 200px;
+            margin-left: 20px;
+            margin-top: -0px;
+        }
+        .boxes p{
+            margin-top: 10px;
+            font-size: 16px;
+            color: #888;
+            font-weight: bold;
+            text-align: left;
+        }
+        .boxes h6{
+            font-size: 16px;
+        }
+        .big-box{
+            background-color:white;
+            height: 50px;
+            width: 20px;
+        }
+        img.brok{
+            height: 45px;
+            width: 150px;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .foot{
+            height: 500px;
+            background-color: #F8F8FF;
+            margin-top: 50px;
+        }
+        .foot h1{
+            color: #433643;
+            font-size: 35px;
+            margin-left: 20px;
+            font-family: sans-serif;
+        }
+        .foot h6{
+            color: #707081;
+            font-size: 16px;
+            margin-left: 20px;
+            margin-top: 10px;
+            font-family: sans-serif;
+        }
+        .foot img{
+            height: 60px;
+            width: 350px;
+            margin-left: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .care{
+            list-style: none;
+            margin-left: 400px;
+            margin-top: -230px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #757580;
+            font-family: sans-serif;
+        }
+        .legal{
+            list-style: none;
+            margin-left: 600px;
+            margin-top: -165px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #757580;
+            font-family: sans-serif;
+        }
+        .insta img{
+            height: 250px;
+            width: 400px;
+            margin-left: 780px;
+            margin-top: -160px;
+            cursor: pointer;
+        }
+        .foot p{
+            font-family: sans-serif;
+            font-size: 20px;
+            color: #353543;
+            font-weight: 600;
+            margin-left: 30px;
+            margin-top: 20px;
+        } 
+        .foot h3{
+            font-family: sans-serif;
+            font-size: 25px;
+            color: #353543;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .foot h5{
+            font-family: sans-serif;
+            font-size: 17px;
+            color: #707081;
+            font-weight: 500;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <p>meesho</p>
+        <button>🔍︎  Try saree,Kurti or Search by Product Code </button>
+       <p class="text">Become <br>a <br>supplier</p>
+       <div class="divider"></div>
+       <p class="text">Investor <br>Relations</p>
+         <div class="divider"></div>
+         <div class="img">
+            <img src="./meeshopics/profile.jpg" alt="">
+         </div>
+         <hr>
+        </div>
+    </nav>
+    <div class="line">
+        <p>________________________________________________________________________________________________________________________________</p>
+        <ul class="menu">
+            <li>Women Ethinic</li>
+            <li>Women Western</li>
+            <li>Men</li>
+            <li>Kids</li>
+            <li>Home & Kitchen</li>
+            <li>Beauty & Health</li>
+            <li>Jewellery & Accessories</li>
+            <li>Electronics & More</li>
+        </ul>
+        <img src="./meeshopics/shop now .jpg" alt="">
+        <div class="box">
+            <p>📦 7days easy return</p>
+                   <div class="divide"></div>
+            <p class="free">💸 Free Delivery</p>
+            <div class="divi"></div>
+            <p class="fre">🏷️ Lowest Price</p>
+        </div>
+        <div class="deco"><img src="./meeshopics/1.jpg" alt="">
+        <img class="bro" src="./meeshopics/2.jpg" alt="">
+        <img src="./meeshopics/3.jpg" alt="">
+        <img class="bitch" src="./meeshopics/4.jpg" alt="">
+        </div>
+        <div class="big-box"></div>
+        <div class="boxes" style="margin-left: 300px;"><img src="./meeshopics/a1.jpg" alt="">
+        <p>Men Cotton Blend Regular</p>
+        <h6>₹ 248</h6>
+        <img src="./meeshopics/b3.jpg" class="brok" alt="">
+        </div>
+         <div class="boxes"><img src="./meeshopics/a2.jpg" alt="">
+        <p>others Cases & Covers</p>
+        <h6>₹ 176</h6>
+                <img src="./meeshopics/b1.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a3.jpg" alt="">
+        <p>Urbane Graceful Women Top</p>
+        <h6>₹ 304</h6>
+                <img src="./meeshopics/b2.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a4.jpg" alt="">
+        <p>Bluetooth Headphones</p>
+        <h6>₹ 262</h6>
+                <img src="./meeshopics/b4.jpg" class="brok" alt="">
+
+        </div>
+        <br>
+        <br><br>
+         <div class="boxes" style="margin-left: 300px;"><img src="./meeshopics/a5.avif" alt="">
+        <p>Men Cotton Blend Regular</p>
+        <h6>₹ 248</h6>
+                <img src="./meeshopics/b4.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a6.avif" alt="">
+        <p>others Cases & Covers</p>
+        <h6>₹ 176</h6>
+                <img src="./meeshopics/b1.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a7.avif" alt="">
+        <p>Urbane Graceful Women Top</p>
+        <h6>₹ 304</h6>
+                <img src="./meeshopics/b2.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a8.avif" alt="">
+        <p>Bluetooth Headphones</p>
+        <h6>₹ 262</h6>
+                <img src="./meeshopics/b3.jpg" class="brok" alt="">
+
+        </div>
+        <br><br><br>
+        <div class="boxes" style="margin-left: 300px;"><img src="./meeshopics/a9.avif" alt="">
+        <p>Men Cotton Blend Regular</p>
+        <h6>₹ 248</h6>
+                <img src="./meeshopics/b1.jpg" class="brok" alt="">
+
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a10.avif" alt="">
+        <p>others Cases & Covers</p>
+        <h6>₹ 176</h6>
+                <img src="./meeshopics/b2.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a11.avif" alt="">
+        <p>Urbane Graceful Women Top</p>
+        <h6>₹ 304</h6>
+                <img src="./meeshopics/b3.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a12.avif" alt="">
+        <p>Bluetooth Headphones</p>
+        <h6>₹ 262</h6>
+                <img src="./meeshopics/b4.jpg" class="brok" alt="">
+
+        </div>
+        <br><br><br>
+        <div class="boxes" style="margin-left: 300px;"><img src="./meeshopics/a13.avif" alt="">
+        <p>Men Cotton Blend Regular</p>
+        <h6>₹ 248</h6>
+                <img src="./meeshopics/b4.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a14.avif" alt="">
+        <p>others Cases & Covers</p>
+        <h6>₹ 176</h6>
+                <img src="./meeshopics/b2.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a15.avif" alt="">
+        <p>Urbane Graceful Women Top</p>
+        <h6>₹ 304</h6>
+                <img src="./meeshopics/b1.jpg" class="brok" alt="">
+
+        </div>
+         <div class="boxes"><img src="./meeshopics/a16.avif" alt="">
+        <p>Bluetooth Headphones</p>
+        <h6>₹ 262</h6>
+                <img src="./meeshopics/b3.jpg" class="brok" alt="">
+
+        </div>
+    </div>
+<footer>
+    <div class="foot">
+        <h1 >Shop Non-Stop on <br>Meesho</h1><br>
+        <h6>Trusted by crores of Indians <br>Cash on Delivery | Free Delivery</h6>
+        <br><br>
+        <img src="./meeshopics/play store.jpg" alt="">
+    <ul class="care">
+        <li>Careers</li><br>
+        <li>Become a <br>supplier</li><br>
+        <li>Hall of Fame</li><br>
+        <li>sitemap</li>
+    </ul>
+    <ul class="legal">
+        <li>Legal & Policies</li><br>
+        <li>Meesho Tech Blog</li><br>
+        <li>Notices and <br>Returns</li><br>
+    </ul>
+    <div class="insta"><img src="./meeshopics/follow.jpg" alt=""></div>
+        <hr>
+        <p>More about Meesho</p><br>
+        <hr>
+        <h3>Discover a World of Affordable Fashion & Everyday Essentials</h3>
+        <h5>Upgrade your wardrobe and stock your home with the latest trends and essentials at prices designed for everyday value. Meesho offers a vast selection of products 
+            <br> across all categories, ensuring you find everything you need at prices suited for everyday budgets.</h5>
+        <h3>Shop Millions of Products Across All Categories</h3>
+        <h5>From trendy fashion finds to essential homeware, Meesho is your one-stop shop for everything you need. Explore millions of products across a wide variety of categories, ensuring you find the perfect item for any occasion.</h5>
+        <h3>Latest Women's Fashion Is Right Here</h3>
+        <h3>Western Wear for Women</h3>
+        <h5>Upgrade your casual or formal attire with Meesho's men's wear collection. We offer a vast selection of T-shirts, jeans, polos, coats, and shirts in all sizes. Our user-friendly search tool allows you to filter by size, color, and material, making it easy to find the perfect fit. Explore our collection of trendy accessories, including wallets, cufflinks, and bags, to add a touch of sophistication to your look.</h5>
+        <h3>Men's Ethinic Wear</h3>
+        <h5>Need a new sherwani or any Indian Attire for an upcoming wedding function? Check out our latest men's ethnic wear collection, which has a range of budget-friendly styles to choose from, so you're sure to find something that fits your needs. Whether you're looking for a Sherwani set, Kurta pajamas or kurta, or an ethnic jacket, we've got it all!</h5>
+    </div>  
+        
+</footer>
+    
+</body>
+
+</html>
